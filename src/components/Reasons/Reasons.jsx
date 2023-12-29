@@ -10,11 +10,6 @@ import nike from "../../assets/nike.png";
 import tick from "../../assets/tick.png";
 
 
-
-
-
-
-
 const Reasons = () => {
   return (    
     <div className="Reasons" id="reasons">

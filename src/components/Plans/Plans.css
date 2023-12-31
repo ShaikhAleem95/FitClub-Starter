@@ -30,7 +30,7 @@
     transform: scale(1.1);
 }
 
-plan>svg{
+.plan>svg{
     fill: var(--orange);
     width: 2rem;
     height: 2rem;
@@ -52,7 +52,7 @@ plan>svg{
 
 .feature{
 display: flex;
-flex-direction: column;
+align-items: center;
 gap: 1rem;
 }
 

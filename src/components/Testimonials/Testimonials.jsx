@@ -6,10 +6,12 @@ import leftArrow from "../../assets/leftArrow.png";
 
 
 
-const [selected,setselected]=useState(0);
-const tLength = testimonialsData.length;
 
 const Testimonials = () => {
+  
+  const [selected,setselected]=useState(0);
+const tLength = testimonialsData.length;
+
   return (
 
     <div className="Testimonials">

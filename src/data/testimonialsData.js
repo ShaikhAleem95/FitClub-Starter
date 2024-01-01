@@ -1,6 +1,7 @@
 import image1 from "../assets/t-image1.png";
 import image2 from "../assets/t-image2.jpg";
 import image3 from "../assets/t-image3.jpg";
+import image4 from "../assets/t-image4.png";
 
 export const testimonialsData = [
   {
@@ -20,6 +21,12 @@ export const testimonialsData = [
     image : image3,
     review:' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima aspernatur quod voluptatem',
     name: 'FRANKLIN',
+    status: "CUSTOMER"
+  },
+  {
+    image : image4,
+    review:' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima aspernatur quod voluptatem',
+    name: 'SHAIKH ALEEM',
     status: "CUSTOMER"
   }
 ];

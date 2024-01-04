@@ -18,7 +18,7 @@ const tLength = testimonialsData.length;
 
       <div className="left-t">
         <span>Testimonials</span>
-        <span className="stroke-text"> What they</span>
+        <span className="stroke-text">What they</span>
         <span>say about us</span>
 
         <span>

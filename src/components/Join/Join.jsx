@@ -19,8 +19,12 @@ const Join = () => {
   };
 
   return (
+
+  
     <div className="Join" id="join-us">
+     
       <div className="left-j">
+        <hr />
         <div>
           <span className="stroke-text">READY TO </span>
           <span> LEVEL UP</span>

@@ -6,20 +6,42 @@ import hero_image_back from "../../assets/hero_image_back.png";
 import Heart from "../../assets/heart.png";
 import calories from "../../assets/calories.png";
 
+import {motion} from 'framer-motion';
+
 
 
 
 const Hero = () => {
+
+  const transition={type:'spring',duration:3};
+
+  const mobile = window.innerWidth <=768 ? true:false;
+
   return (
    
+  
+ 
     <div className='hero'>
+
+         <div className="blur hero-blur"></div>
+
+
                 <div className="left-h">
                             <Header/>
 
 
                         {/* the best add  <span>the best fitness club in town</span> */}
+                       
                         <div className='the-best-ad'>
-                          <div></div>
+                       
+                          <motion.div
+                          initial={{left:mobile ? "165px": "208px"}}
+                          whileInView={{left:'8px'}}
+                          transition={{...transition, type:'tween'}}
+                          >
+                          </motion.div>
+
+                       
                           <span>the best fitness club in town</span>
                         </div>
 
@@ -79,27 +101,39 @@ const Hero = () => {
 
                     <button className='btn'>Join Now</button>
 
-                    <div className='heart-rate'>
+                    <motion.div 
+                    initial={{right:'-1rem'}}
+                    whileInView={{right:'4rem'}}
+                    transition={transition}
+                    className='heart-rate'>
                       <img src={Heart} alt="" />
                       <span>Heart Rate</span>
                       <span>116 bpn</span>
 
 
-                    </div>
+                    </motion.div>
                   
                               {/* hero images  */}
                                 <img src={hero_image}  alt=""  class="hero-image"/>
-                                <img src={hero_image_back}  alt=""  class="hero-image-back"/>
+                                <motion.img
+                                initial={{right:'11rem'}}
+                                whileInView={{right:'20rem'}}
+                                transition={transition}
+                                src={hero_image_back}  alt=""  class="hero-image-back"/>
                   
                             {/* calories  */}
 
-                          <div className="calories">
+                          <motion.div
+                          initial={{right:'37rem'}}
+                          whileInView={{right:'28rem'}}
+                          transition={transition}
+                          className="calories">
                               <img src={calories} alt="" />
                               <div>
                               <span>calories Burned </span>
                               <span>220 kcalk</span>
                             </div>
-                         </div>
+                         </motion.div>
 
 
 
